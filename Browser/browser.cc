@@ -525,6 +525,8 @@ Node* load_scene(int argc, char **argv) {
 	return rootNode;
 }
 
+//Funtzio nagusia
+
 int main(int argc, char** argv) {
 
 	srand(time(0));
