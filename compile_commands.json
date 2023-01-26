@@ -1,0 +1,432 @@
+[
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Browser/browser.cc.o -c /users/1004180/mg/Browser/browser.cc",
+  "file": "/users/1004180/mg/Browser/browser.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/vector3.cc.o -c /users/1004180/mg/Math/vector3.cc",
+  "file": "/users/1004180/mg/Math/vector3.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/trfm3D.cc.o -c /users/1004180/mg/Math/trfm3D.cc",
+  "file": "/users/1004180/mg/Math/trfm3D.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/plane.cc.o -c /users/1004180/mg/Math/plane.cc",
+  "file": "/users/1004180/mg/Math/plane.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/line.cc.o -c /users/1004180/mg/Math/line.cc",
+  "file": "/users/1004180/mg/Math/line.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/segment.cc.o -c /users/1004180/mg/Math/segment.cc",
+  "file": "/users/1004180/mg/Math/segment.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/bbox.cc.o -c /users/1004180/mg/Math/bbox.cc",
+  "file": "/users/1004180/mg/Math/bbox.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/bsphere.cc.o -c /users/1004180/mg/Math/bsphere.cc",
+  "file": "/users/1004180/mg/Math/bsphere.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/intersect.cc.o -c /users/1004180/mg/Math/intersect.cc",
+  "file": "/users/1004180/mg/Math/intersect.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/bboxGL.cc.o -c /users/1004180/mg/Math/bboxGL.cc",
+  "file": "/users/1004180/mg/Math/bboxGL.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Math/trfmStack.cc.o -c /users/1004180/mg/Math/trfmStack.cc",
+  "file": "/users/1004180/mg/Math/trfmStack.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Geometry/triangleMesh.cc.o -c /users/1004180/mg/Geometry/triangleMesh.cc",
+  "file": "/users/1004180/mg/Geometry/triangleMesh.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Geometry/gObject.cc.o -c /users/1004180/mg/Geometry/gObject.cc",
+  "file": "/users/1004180/mg/Geometry/gObject.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Geometry/gObjectManager.cc.o -c /users/1004180/mg/Geometry/gObjectManager.cc",
+  "file": "/users/1004180/mg/Geometry/gObjectManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Geometry/triangleMeshGL.cc.o -c /users/1004180/mg/Geometry/triangleMeshGL.cc",
+  "file": "/users/1004180/mg/Geometry/triangleMeshGL.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/light.cc.o -c /users/1004180/mg/Shading/light.cc",
+  "file": "/users/1004180/mg/Shading/light.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/material.cc.o -c /users/1004180/mg/Shading/material.cc",
+  "file": "/users/1004180/mg/Shading/material.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/texture.cc.o -c /users/1004180/mg/Shading/texture.cc",
+  "file": "/users/1004180/mg/Shading/texture.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/texturert.cc.o -c /users/1004180/mg/Shading/texturert.cc",
+  "file": "/users/1004180/mg/Shading/texturert.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/image.cc.o -c /users/1004180/mg/Shading/image.cc",
+  "file": "/users/1004180/mg/Shading/image.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/textureManager.cc.o -c /users/1004180/mg/Shading/textureManager.cc",
+  "file": "/users/1004180/mg/Shading/textureManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/materialManager.cc.o -c /users/1004180/mg/Shading/materialManager.cc",
+  "file": "/users/1004180/mg/Shading/materialManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/lightManager.cc.o -c /users/1004180/mg/Shading/lightManager.cc",
+  "file": "/users/1004180/mg/Shading/lightManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shading/imageManager.cc.o -c /users/1004180/mg/Shading/imageManager.cc",
+  "file": "/users/1004180/mg/Shading/imageManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shaders/shaderUtils.cc.o -c /users/1004180/mg/Shaders/shaderUtils.cc",
+  "file": "/users/1004180/mg/Shaders/shaderUtils.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shaders/shaderManager.cc.o -c /users/1004180/mg/Shaders/shaderManager.cc",
+  "file": "/users/1004180/mg/Shaders/shaderManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shaders/shader.cc.o -c /users/1004180/mg/Shaders/shader.cc",
+  "file": "/users/1004180/mg/Shaders/shader.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Shaders/uniform.cc.o -c /users/1004180/mg/Shaders/uniform.cc",
+  "file": "/users/1004180/mg/Shaders/uniform.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Camera/camera.cc.o -c /users/1004180/mg/Camera/camera.cc",
+  "file": "/users/1004180/mg/Camera/camera.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Camera/avatar.cc.o -c /users/1004180/mg/Camera/avatar.cc",
+  "file": "/users/1004180/mg/Camera/avatar.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Camera/cameraManager.cc.o -c /users/1004180/mg/Camera/cameraManager.cc",
+  "file": "/users/1004180/mg/Camera/cameraManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Camera/avatarManager.cc.o -c /users/1004180/mg/Camera/avatarManager.cc",
+  "file": "/users/1004180/mg/Camera/avatarManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Scene/node.cc.o -c /users/1004180/mg/Scene/node.cc",
+  "file": "/users/1004180/mg/Scene/node.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Scene/nodeManager.cc.o -c /users/1004180/mg/Scene/nodeManager.cc",
+  "file": "/users/1004180/mg/Scene/nodeManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Scene/renderState.cc.o -c /users/1004180/mg/Scene/renderState.cc",
+  "file": "/users/1004180/mg/Scene/renderState.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Scene/scene.cc.o -c /users/1004180/mg/Scene/scene.cc",
+  "file": "/users/1004180/mg/Scene/scene.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Scene/skybox.cc.o -c /users/1004180/mg/Scene/skybox.cc",
+  "file": "/users/1004180/mg/Scene/skybox.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Misc/constants.cc.o -c /users/1004180/mg/Misc/constants.cc",
+  "file": "/users/1004180/mg/Misc/constants.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Misc/tools.cc.o -c /users/1004180/mg/Misc/tools.cc",
+  "file": "/users/1004180/mg/Misc/tools.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Misc/jsoncpp.cpp.o -c /users/1004180/mg/Misc/jsoncpp.cpp",
+  "file": "/users/1004180/mg/Misc/jsoncpp.cpp"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Misc/parse_scene.cc.o -c /users/1004180/mg/Misc/parse_scene.cc",
+  "file": "/users/1004180/mg/Misc/parse_scene.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/cc  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Misc/glm.c.o -c /users/1004180/mg/Misc/glm.c",
+  "file": "/users/1004180/mg/Misc/glm.c"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser.dir/Browser/scenes.cc.o -c /users/1004180/mg/Browser/scenes.cc",
+  "file": "/users/1004180/mg/Browser/scenes.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Browser/browser_gobj.cc.o -c /users/1004180/mg/Browser/browser_gobj.cc",
+  "file": "/users/1004180/mg/Browser/browser_gobj.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/vector3.cc.o -c /users/1004180/mg/Math/vector3.cc",
+  "file": "/users/1004180/mg/Math/vector3.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/trfm3D.cc.o -c /users/1004180/mg/Math/trfm3D.cc",
+  "file": "/users/1004180/mg/Math/trfm3D.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/plane.cc.o -c /users/1004180/mg/Math/plane.cc",
+  "file": "/users/1004180/mg/Math/plane.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/line.cc.o -c /users/1004180/mg/Math/line.cc",
+  "file": "/users/1004180/mg/Math/line.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/segment.cc.o -c /users/1004180/mg/Math/segment.cc",
+  "file": "/users/1004180/mg/Math/segment.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/bbox.cc.o -c /users/1004180/mg/Math/bbox.cc",
+  "file": "/users/1004180/mg/Math/bbox.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/bsphere.cc.o -c /users/1004180/mg/Math/bsphere.cc",
+  "file": "/users/1004180/mg/Math/bsphere.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/intersect.cc.o -c /users/1004180/mg/Math/intersect.cc",
+  "file": "/users/1004180/mg/Math/intersect.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/bboxGL.cc.o -c /users/1004180/mg/Math/bboxGL.cc",
+  "file": "/users/1004180/mg/Math/bboxGL.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Math/trfmStack.cc.o -c /users/1004180/mg/Math/trfmStack.cc",
+  "file": "/users/1004180/mg/Math/trfmStack.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Geometry/triangleMesh.cc.o -c /users/1004180/mg/Geometry/triangleMesh.cc",
+  "file": "/users/1004180/mg/Geometry/triangleMesh.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Geometry/gObject.cc.o -c /users/1004180/mg/Geometry/gObject.cc",
+  "file": "/users/1004180/mg/Geometry/gObject.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Geometry/gObjectManager.cc.o -c /users/1004180/mg/Geometry/gObjectManager.cc",
+  "file": "/users/1004180/mg/Geometry/gObjectManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Geometry/triangleMeshGL.cc.o -c /users/1004180/mg/Geometry/triangleMeshGL.cc",
+  "file": "/users/1004180/mg/Geometry/triangleMeshGL.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/light.cc.o -c /users/1004180/mg/Shading/light.cc",
+  "file": "/users/1004180/mg/Shading/light.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/material.cc.o -c /users/1004180/mg/Shading/material.cc",
+  "file": "/users/1004180/mg/Shading/material.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/texture.cc.o -c /users/1004180/mg/Shading/texture.cc",
+  "file": "/users/1004180/mg/Shading/texture.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/texturert.cc.o -c /users/1004180/mg/Shading/texturert.cc",
+  "file": "/users/1004180/mg/Shading/texturert.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/image.cc.o -c /users/1004180/mg/Shading/image.cc",
+  "file": "/users/1004180/mg/Shading/image.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/textureManager.cc.o -c /users/1004180/mg/Shading/textureManager.cc",
+  "file": "/users/1004180/mg/Shading/textureManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/materialManager.cc.o -c /users/1004180/mg/Shading/materialManager.cc",
+  "file": "/users/1004180/mg/Shading/materialManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/lightManager.cc.o -c /users/1004180/mg/Shading/lightManager.cc",
+  "file": "/users/1004180/mg/Shading/lightManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/imageManager.cc.o -c /users/1004180/mg/Shading/imageManager.cc",
+  "file": "/users/1004180/mg/Shading/imageManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shaders/shaderUtils.cc.o -c /users/1004180/mg/Shaders/shaderUtils.cc",
+  "file": "/users/1004180/mg/Shaders/shaderUtils.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shaders/shaderManager.cc.o -c /users/1004180/mg/Shaders/shaderManager.cc",
+  "file": "/users/1004180/mg/Shaders/shaderManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shaders/shader.cc.o -c /users/1004180/mg/Shaders/shader.cc",
+  "file": "/users/1004180/mg/Shaders/shader.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Shaders/uniform.cc.o -c /users/1004180/mg/Shaders/uniform.cc",
+  "file": "/users/1004180/mg/Shaders/uniform.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Camera/camera.cc.o -c /users/1004180/mg/Camera/camera.cc",
+  "file": "/users/1004180/mg/Camera/camera.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Camera/avatar.cc.o -c /users/1004180/mg/Camera/avatar.cc",
+  "file": "/users/1004180/mg/Camera/avatar.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Camera/cameraManager.cc.o -c /users/1004180/mg/Camera/cameraManager.cc",
+  "file": "/users/1004180/mg/Camera/cameraManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Camera/avatarManager.cc.o -c /users/1004180/mg/Camera/avatarManager.cc",
+  "file": "/users/1004180/mg/Camera/avatarManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/node.cc.o -c /users/1004180/mg/Scene/node.cc",
+  "file": "/users/1004180/mg/Scene/node.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/nodeManager.cc.o -c /users/1004180/mg/Scene/nodeManager.cc",
+  "file": "/users/1004180/mg/Scene/nodeManager.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/renderState.cc.o -c /users/1004180/mg/Scene/renderState.cc",
+  "file": "/users/1004180/mg/Scene/renderState.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/scene.cc.o -c /users/1004180/mg/Scene/scene.cc",
+  "file": "/users/1004180/mg/Scene/scene.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/skybox.cc.o -c /users/1004180/mg/Scene/skybox.cc",
+  "file": "/users/1004180/mg/Scene/skybox.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/constants.cc.o -c /users/1004180/mg/Misc/constants.cc",
+  "file": "/users/1004180/mg/Misc/constants.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/tools.cc.o -c /users/1004180/mg/Misc/tools.cc",
+  "file": "/users/1004180/mg/Misc/tools.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/jsoncpp.cpp.o -c /users/1004180/mg/Misc/jsoncpp.cpp",
+  "file": "/users/1004180/mg/Misc/jsoncpp.cpp"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/parse_scene.cc.o -c /users/1004180/mg/Misc/parse_scene.cc",
+  "file": "/users/1004180/mg/Misc/parse_scene.cc"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/cc  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/glm.c.o -c /users/1004180/mg/Misc/glm.c",
+  "file": "/users/1004180/mg/Misc/glm.c"
+},
+{
+  "directory": "/users/1004180/mg",
+  "command": "/usr/bin/c++  -I/users/1004180/mg/. -I/users/1004180/mg/Math -I/users/1004180/mg/Geometry -I/users/1004180/mg/Shading -I/users/1004180/mg/Shaders -I/users/1004180/mg/Camera -I/users/1004180/mg/Scene -I/users/1004180/mg/Misc -I/users/1004180/mg/Browser -g -o CMakeFiles/browser_gobj.dir/Browser/scenes.cc.o -c /users/1004180/mg/Browser/scenes.cc",
+  "file": "/users/1004180/mg/Browser/scenes.cc"
+}
+]
