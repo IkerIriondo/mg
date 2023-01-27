@@ -23,7 +23,10 @@ Line & Line::operator=(const Line & line) {
 
 void Line::setFromAtoB(const Vector3 & A, const Vector3 & B) {
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	Vector3 ab = B - A;
+	assert(!ab.isZero());
+	m_O = A;
+	m_d = ab.normalize();
 	/* =================== END YOUR CODE HERE ====================== */
 }
 
@@ -32,7 +35,7 @@ void Line::setFromAtoB(const Vector3 & A, const Vector3 & B) {
 Vector3 Line::at(float u) const {
 	Vector3 res;
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	res = m_O + u*m_d;
 	/* =================== END YOUR CODE HERE ====================== */
 	return res;
 }
@@ -44,7 +47,9 @@ Vector3 Line::at(float u) const {
 float Line::paramDistance(const Vector3 & P) const {
 	float res = 0.0f;
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	Vector3 po = P - m_O;
+	float u0 = m_d.dot(po)/m_d.dot(m_d);
+	res = u0;
 	/* =================== END YOUR CODE HERE ====================== */
 	return res;
 }
@@ -57,7 +62,10 @@ float Line::paramDistance(const Vector3 & P) const {
 float Line::distance(const Vector3 & P) const {
 	float res = 0.0f;
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	float u0 = paramDistance(P);
+	Vector3 p1 = at(u0);
+	Vector3 resv = P - p1;
+	res = resv.length();
 	/* =================== END YOUR CODE HERE ====================== */
 	return res;
 }
