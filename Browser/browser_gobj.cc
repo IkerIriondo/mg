@@ -186,7 +186,7 @@ void create_scene_tmesh() {
 
 	mesh = new TriangleMesh;
 
-	float offset = 0;
+	float offset = 0.2;
 
 	mesh->addPoint(Vector3(-0.25, -0.25, -0.25 )); // P0
 	mesh->addPoint(Vector3(0.25, -0.25, -0.25 )); // P1
@@ -200,7 +200,25 @@ void create_scene_tmesh() {
 	/* =================== PUT YOUR CODE HERE ====================== */
 	// Complete the triangle mesh with the vertices and triangles that
 	// form a 3D cube.
+	mesh->addPoint(Vector3(-0.25 + offset, -0.25 + offset, -0.75)); // P4
+	mesh->addPoint(Vector3(0.25 + offset, -0.25 + offset, -0.75)); // P5
+	mesh->addPoint(Vector3(0.25 + offset, 0.25 + offset, -0.75)); // P6
+	mesh->addPoint(Vector3(-0.25 + offset, 0.25 + offset, -0.75)); // P7
 
+	mesh->addTriangle(0, 5, 1);
+	mesh->addTriangle(0, 4, 5);
+
+	mesh->addTriangle(1, 5, 6);
+	mesh->addTriangle(1, 6, 2);
+
+	mesh->addTriangle(2, 6, 3);
+	mesh->addTriangle(3, 6, 7);
+
+	mesh->addTriangle(3, 7, 4);
+	mesh->addTriangle(0, 3, 4);
+
+	mesh->addTriangle(4, 6, 5);
+	mesh->addTriangle(4, 7, 6);
 	/* =================== END YOUR CODE HERE ====================== */
 
 	GObject *gObj = GObjectManager::instance()->create("MG_CUBE");
@@ -219,7 +237,19 @@ void create_regular_polygon(int N) {
 	/* =================== PUT YOUR CODE HERE ====================== */
 	// Create a regular polygon of N sides.
 
-
+	float x = 0;
+	float y = 0;
+	float z = 0;
+	mesh->addPoint(Vector3(x, y, z)); // P0
+	float r = 0.25;
+	int i;
+	for(i = 0; i<N; i++){
+		mesh->addPoint(Vector3(r*cos(2*M_PI*i/N) + x, r*sin(2*M_PI*i/N) + y, -0.25 + z));
+	}
+	mesh->addTriangle(0, N, 1);
+	for(i = 0; i<N; i++){
+		mesh->addTriangle(0, i, i+1);
+	}
 	/* =================== END YOUR CODE HERE ====================== */
 
 	GObject *gObj = GObjectManager::instance()->create("MG_POLYGON");
