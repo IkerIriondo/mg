@@ -30,14 +30,6 @@
   </code>
 */
 
-
-//! The matrix will be stored split into its components
-
-/*     | c1.x*s  c2.x*s  c3.x*s tr.x | */
-/* M = | c1.y*s  c2.y*s  c3.y*s tr.y | */
-/*     | c1.z*s  c2.z*s  c3.z*s tr.z | */
-/*     |   d.x     d.y     d.z   w   | */
-
 class Trfm3D {
 
 public:
@@ -210,6 +202,12 @@ public:
 	void print(const std::string & del = std::string()) const;
 
 private:
+//! The matrix will be stored split into its components
+
+/*     | c1.x*s  c2.x*s  c3.x*s tr.x | */
+/* M = | c1.y*s  c2.y*s  c3.y*s tr.y | */
+/*     | c1.z*s  c2.z*s  c3.z*s tr.z | */
+/*     |   d.x     d.y     d.z   w   | */
 	Vector3 m_c1, m_c2, m_c3;
 	Vector3 m_tr;
 	Vector3 m_d;

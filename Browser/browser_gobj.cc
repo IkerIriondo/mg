@@ -186,7 +186,7 @@ void create_scene_tmesh() {
 
 	mesh = new TriangleMesh;
 
-	float offset = 0.2;
+	float offset = 0.0;
 
 	mesh->addPoint(Vector3(-0.25, -0.25, -0.25 )); // P0
 	mesh->addPoint(Vector3(0.25, -0.25, -0.25 )); // P1

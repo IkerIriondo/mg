@@ -47,7 +47,9 @@ void Trfm3D::clone( const Trfm3D *T ) {	clone(*T); }
 Vector3 Trfm3D::transformPoint(const Vector3 & P) const {
 	Vector3 res;
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	res[0] = P[0]*m_c1.x()*m_scl + P[1]*m_c2.x()*m_scl + P[2]*m_c3.x()*m_scl + 1*m_tr.x();
+	res[1] = P[0]*m_c1.y()*m_scl + P[1]*m_c2.y()*m_scl + P[2]*m_c3.y()*m_scl + 1*m_tr.y();
+	res[2] = P[0]*m_c1.z()*m_scl + P[1]*m_c2.z()*m_scl + P[2]*m_c3.z()*m_scl + 1*m_tr.z();
 	/* =================== END YOUR CODE HERE ====================== */
 	return res;
 }
@@ -63,7 +65,9 @@ Vector3 Trfm3D::transformPoint(const Vector3 & P) const {
 Vector3 Trfm3D::transformVector(const Vector3 & V) const {
 	Vector3 res;
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	res[0] = V[0]*m_c1.x()*m_scl + V[1]*m_c2.x()*m_scl + V[2]*m_c3.x()*m_scl + 0*m_tr.x();
+	res[1] = V[0]*m_c1.y()*m_scl + V[1]*m_c2.y()*m_scl + V[2]*m_c3.y()*m_scl + 0*m_tr.y();
+	res[2] = V[0]*m_c1.z()*m_scl + V[1]*m_c2.z()*m_scl + V[2]*m_c3.z()*m_scl + 0*m_tr.z();
 	/* =================== END YOUR CODE HERE ====================== */
 	return res;
 }
