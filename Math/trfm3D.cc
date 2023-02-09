@@ -422,7 +422,26 @@ void Trfm3D::setScale(float scale ) {
 
 void Trfm3D::setRotAxis(const Vector3 & V, const Vector3 & P, float angle ) {
 	/* =================== PUT YOUR CODE HERE ====================== */
+	V.normalize();
+	float costheta = cosf(angle);
+	float sintheta = sinf(angle);
 
+	m_c1[0] = (costheta + (1 - costheta) * V[0] * V[0]);
+	m_c2[0] = ((1 - costheta) * V[0] * V[1] - V[2] * sintheta);
+	m_c3[0] = ((1 - costheta) * V[0] * V[2] + V[1] * sintheta);
+
+	m_c1[1] = ((1 - costheta) * V[0] * V[1] + V[2] * sintheta);
+	m_c2[1] = (costheta + (1 - costheta) * V[1] * V[1]);
+	m_c3[1] = ((1 - costheta) * V[1] * V[2] - V[0] * sintheta);
+
+	m_c1[2] = ((1 - costheta) * V[0] * V[2] - V[1] * sintheta);
+	m_c2[2] = ((1 - costheta) * V[1] * V[2] + V[0] * sintheta);
+	m_c3[2] = (costheta + (1 - costheta) * V[2] * V[2]);
+
+	m_tr = Vector3(P[0], P[1], P[2]);
+	m_d = Vector3::ZERO;
+	m_scl = 1.0f;
+	m_w  = 1.0f;
 	/* =================== END YOUR CODE HERE ====================== */
 }
 
