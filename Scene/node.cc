@@ -271,14 +271,14 @@ void Node::addChild(Node *theChild) {
 	if (m_gObject) {
 		/* =================== PUT YOUR CODE HERE ====================== */
 		// node has a gObject, so print warning
-
+		printf("Nodo honeri ezin zaio umerik gehitu, dagoeneko objektu geometriko bat duelako.\n");
 		/* =================== END YOUR CODE HERE ====================== */
 	} else {
 		/* =================== PUT YOUR CODE HERE ====================== */
 		// node does not have gObject, so attach child
-
+		theChild->m_parent = this;
+		m_children.push_back(theChild);
 		/* =================== END YOUR CODE HERE ====================== */
-
 	}
 }
 
@@ -419,8 +419,21 @@ void Node::draw() {
 	   (this == Scene::instance()->get_display_node())) {
 		BBoxGL::draw( m_containerWC);
 	}
-	/* =================== PUT YOUR CODE HERE ====================== */
 
+	/* =================== PUT YOUR CODE HERE ====================== */
+	if(m_gObject){
+		rs->addTrfm(RenderState::modelview, m_placement); 
+		m_gObject->draw();
+	}else{
+		int i;
+		for(i = 0; i<m_children.size(); i++){
+			Node *child = m_children.front();
+			m_children.pop_front();
+			rs->addTrfm(RenderState::modelview,m_placement);
+			child->draw();
+			m_children.push_back(child);
+		}
+	}
 	/* =================== END YOUR CODE HERE ====================== */
 
 	if (prev_shader != 0) {

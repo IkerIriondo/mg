@@ -269,7 +269,7 @@ int main(int argc, char** argv) {
 	// create Scene
 	create_scene_tmesh();
 	create_regular_polygon(6);
-	T->setRotAxis(Vector3(0.1, 0.2, 0.3), Vector3(0.2, 0.2, 0.2), 0.3);
+	//T->setRotAxis(Vector3(0.1, 0.2, 0.3), Vector3(0.2, 0.2, 0.2), 0.3);
 	glutMainLoop();
 	delete T;
 	return 0;
