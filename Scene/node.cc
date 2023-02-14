@@ -422,17 +422,17 @@ void Node::draw() {
 
 	/* =================== PUT YOUR CODE HERE ====================== */
 	if(m_gObject){
+		rs->push(RenderState::modelview);
 		rs->addTrfm(RenderState::modelview, m_placement); 
 		m_gObject->draw();
+		rs->pop(RenderState::modelview);
 	}else{
-		int i;
-		for(i = 0; i<m_children.size(); i++){
-			Node *child = m_children.front();
-			m_children.pop_front();
-			rs->addTrfm(RenderState::modelview,m_placement);
-			child->draw();
-			m_children.push_back(child);
-		}
+		rs->push(RenderState::modelview);
+		rs->addTrfm(RenderState::modelview, m_placement);
+		for(auto & theChild : m_children) {
+	        theChild->draw();
+    	}
+		rs->pop(RenderState::modelview);
 	}
 	/* =================== END YOUR CODE HERE ====================== */
 
