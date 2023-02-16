@@ -276,6 +276,8 @@ void Node::addChild(Node *theChild) {
 	} else {
 		/* =================== PUT YOUR CODE HERE ====================== */
 		// node does not have gObject, so attach child
+		theChild->m_placementWC->clone(m_placementWC);
+		theChild->m_placementWC->add(theChild->m_placement);
 		theChild->m_parent = this;
 		m_children.push_back(theChild);
 		/* =================== END YOUR CODE HERE ====================== */
@@ -423,16 +425,16 @@ void Node::draw() {
 	/* =================== PUT YOUR CODE HERE ====================== */
 	if(m_gObject){
 		rs->push(RenderState::modelview);
-		rs->addTrfm(RenderState::modelview, m_placement); 
+		rs->addTrfm(RenderState::modelview, m_placementWC); 
 		m_gObject->draw();
 		rs->pop(RenderState::modelview);
 	}else{
-		rs->push(RenderState::modelview);
-		rs->addTrfm(RenderState::modelview, m_placement);
+		//rs->push(RenderState::modelview);
+		//rs->addTrfm(RenderState::modelview, m_placement);
 		for(auto & theChild : m_children) {
 	        theChild->draw();
     	}
-		rs->pop(RenderState::modelview);
+		//rs->pop(RenderState::modelview);
 	}
 	/* =================== END YOUR CODE HERE ====================== */
 
