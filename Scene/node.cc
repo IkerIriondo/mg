@@ -489,10 +489,23 @@ void Node::frustumCull(Camera *cam) {
 //    iterate through children.
 
 const Node *Node::checkCollision(const BSphere *bsph) const {
-	if (!m_checkCollision) return 0;
+	//if (!m_checkCollision) return 0;
 	/* =================== PUT YOUR CODE HERE ====================== */
-
-	return 0; /* No collision */
+	if(m_gObject){
+		if(BSphereBBoxIntersect(bsph, m_containerWC) == IINTERSECT){
+			return this;
+		}else{
+			return 0;
+		}
+	}else{
+		if(BSphereBBoxIntersect(bsph, m_containerWC) == IINTERSECT){
+			for(auto & theChild : m_children) {
+				const Node *ema = theChild->checkCollision(bsph);
+        		if(ema) return ema;
+    		}
+		}
+	}
+	//return 0; /* No collision */
    /* =================== END YOUR CODE HERE ====================== */
 }
 

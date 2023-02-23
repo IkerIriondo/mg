@@ -43,10 +43,28 @@ bool Avatar::advance(float step) {
 
 	Node *rootNode = Scene::instance()->rootNode();
 	/* =================== PUT YOUR CODE HERE ====================== */
+	Vector3 zentroa = Vector3(m_bsph->m_centre);
+	if (m_walk){
+		m_cam->walk(step);
+	}else{
+		m_cam->fly(step);
+	}
+	m_bsph->m_centre = m_cam->getPosition();
 
+	if(rootNode->checkCollision(m_bsph)){
+		if (m_walk){
+		m_cam->walk(-step);
+		}else{
+			m_cam->fly(-step);
+		}
+		m_bsph->m_centre = zentroa;
+		return false;
+	}else{
+		return true;
+	}
 	/* =================== END YOUR CODE HERE ====================== */
 	// no collision
-	return true;
+	//return true;
 }
 
 void Avatar::leftRight(float angle) {
