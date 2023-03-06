@@ -473,7 +473,7 @@ void Node::setCulled(bool culled) {
 
 void Node::frustumCull(Camera *cam) {
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	int ema = cam->checkFrustum();
 	/* =================== END YOUR CODE HERE ====================== */
 }
 
