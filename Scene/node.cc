@@ -473,14 +473,13 @@ void Node::setCulled(bool culled) {
 
 void Node::frustumCull(Camera *cam) {
 	/* =================== PUT YOUR CODE HERE ====================== */
-	unsigned int *ema;
 	int ema1;
 	if(m_gObject){
-		ema1 = cam->checkFrustum(m_containerWC, ema);
+		ema1 = cam->checkFrustum(m_containerWC, 0);
 		if(ema1 == 1) this->setCulled(true);
 		else this->setCulled(false);
 	}else{
-		ema1 = cam->checkFrustum(m_containerWC, ema);
+		ema1 = cam->checkFrustum(m_containerWC, 0);
 		if(ema1 == 1){
 			this->setCulled(true);
 		}else{

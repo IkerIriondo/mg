@@ -303,18 +303,23 @@ void  Camera::arcLeftRight(float angle) {
 // @@ TODO: Check frustum (look at camera.h for parameter descriptions and return
 //          values)
 
-int Camera::checkFrustum(const BBox *theBBox,
-						 unsigned int *planesBitM) {
-	int res = -1; // by default, BBOX fully inside
+int Camera::checkFrustum(const BBox *theBBox, unsigned int *planesBitM) {
+	int res = 1; // by default, BBOX fully inside
 	/* =================== PUT YOUR CODE HERE ====================== */
 	int int_l = BBoxPlaneIntersect(theBBox, m_fPlanes[0]);
 	int int_r = BBoxPlaneIntersect(theBBox, m_fPlanes[1]);
 	int int_b = BBoxPlaneIntersect(theBBox, m_fPlanes[2]);
-	int int_t = BBoxPlaneIntersect(theBBox, m_fPlanes[3]);
+	int int_g = BBoxPlaneIntersect(theBBox, m_fPlanes[3]);
 	int int_n = BBoxPlaneIntersect(theBBox, m_fPlanes[4]);
 	int int_f = BBoxPlaneIntersect(theBBox, m_fPlanes[5]);
 
-	
+	if(int_l <= 0 && int_r <= 0 && int_b <= 0 && int_g <= 0 && int_n <= 0 && int_f <= 0){
+		if(int_l == 0 || int_r == 0 || int_b == 0 || int_g == 0 || int_n == 0 || int_f == 0){
+			res = 0;
+		}else{
+			res = -1;
+		}
+	}
 	/* =================== END YOUR CODE HERE ====================== */
 	return res; // BBox is fully inside the frustum
 }
