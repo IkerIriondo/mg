@@ -32,6 +32,9 @@ class RenderState {
 public:
 	static RenderState *instance();
 
+	float getSc() const;
+	void setSc(float v);
+
 	// stack type
 	enum stack_t {
 		modelview,
@@ -244,4 +247,5 @@ private:
 	// SkyBox
 
 	Node *m_skybox;
+	float m_sc;
 };

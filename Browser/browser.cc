@@ -22,6 +22,8 @@ static int prevTime;
 static int mouse_pre_x = -1;
 static int mouse_pre_y = -1;
 
+static float angle = 0;
+
 static void switchAllLights(bool onOff) {
 	for(auto it = LightManager::instance()->begin(), end = LightManager::instance()->end();
 		it != end; ++it) it->switchLight(onOff);
@@ -506,7 +508,9 @@ void animate(int value) {
 	// ##### REPLACE WITH YOUR OWN GAME/APP MAIN CODE HERE #####
 	if (runAnimation) {
 		// Force a redisplay to render the new image
-
+		angle = angle + 0.01;
+		if(angle > 2*M_PI) angle = 0;
+		RenderState::instance()->setSc(cos(angle));
 		glutPostRedisplay();
 	}
 	// ##### END OF GAME/APP MAIN CODE #####
