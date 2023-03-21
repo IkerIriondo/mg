@@ -34,9 +34,20 @@ varying vec2 f_texCoord;
 
 void main() {
 	gl_Position = modelToClipMatrix * vec4(v_position, 1);
-	vec3 l = -vec4(modelToCameraMatrix * theLights[0].position).xyz;
-	float nl = dot(l, vec4(modelToCameraMatrix * vec4(v_normal,0)).xyz);
+	vec3 l = -theLights[0].position.xyz;
+	l = normalize(l);
+	vec3 n = vec4(modelToCameraMatrix * vec4(v_normal,0)).xyz;
+	n = normalize(n);
+	float nl = dot(l, n);
 	float max = max(0,nl);
+	vec3 idif = theLights[0].diffuse * theMaterial.diffuse;
+	vec3 r = 2 * nl * n - l;
+	vec3 v = vec3(modelToCameraMatrix[3][0] - v_position.x, modelToCameraMatrix[3][1] - v_position.y, modelToCameraMatrix[3][2] - v_position.z);
+	v = normalize(v);
+	float rv = dot(r,v);
+	
 
-	f_color.xyz = scene_ambient + max*(cross(theLights[0].diffuse, theMaterial.diffuse));
+	vec3 ispec = 
+
+	f_color = vec4(scene_ambient + max * (idif + ispec,1);
 }
