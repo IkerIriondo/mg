@@ -39,15 +39,16 @@ void main() {
 	vec3 n = vec4(modelToCameraMatrix * vec4(v_normal,0)).xyz;
 	n = normalize(n);
 	float nl = dot(l, n);
-	float max = max(0,nl);
+	float dmax = max(0,nl);
 	vec3 idif = theLights[0].diffuse * theMaterial.diffuse;
-	vec3 r = 2 * nl * n - l;
-	vec3 v = vec3(modelToCameraMatrix[3][0] - v_position.x, modelToCameraMatrix[3][1] - v_position.y, modelToCameraMatrix[3][2] - v_position.z);
+
+	vec3 v = gl_Position.xyz;
 	v = normalize(v);
-	float rv = dot(r,v);
+	vec3 h = normalize(l + v);
+	float hn = dot(h, n);
+	float smax = max(0, hn);
 	
+	vec3 ispec = smax * (theMaterial.specular * theLights[0].specular);
 
-	vec3 ispec = 
-
-	f_color = vec4(scene_ambient + max * (idif + ispec,1);
+	f_color = vec4(scene_ambient + dmax * (idif + ispec),1);
 }
