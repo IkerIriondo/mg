@@ -33,7 +33,8 @@ varying vec4 f_color;
 varying vec2 f_texCoord;
 
 vec3 espekularra(vec3 n, vec3 l, float nl,light_t theLight){
-	vec3 v = gl_Position.xyz;
+	vec4 position = vec4(modelToCameraMatrix * vec4(v_position,1));
+	vec3 v = -position.xyz;
 	v = normalize(v);
 	vec3 r = 2 * nl * n - l;
 	r = normalize(r);
@@ -58,16 +59,19 @@ vec3 direkzionala(light_t theLight){
 }
 
 vec3 lokala(light_t theLight){
+	vec4 position = vec4(modelToCameraMatrix * vec4(v_position,1));
+	float dist = distance(theLight.position, position);
+	float d = 1/(theLight.attenuation.x + theLight.attenuation.y * dist + theLight.attenuation.z * pow(dist, 2));
 	vec3 n = vec4(modelToCameraMatrix * vec4(v_normal,0)).xyz;
 	n = normalize(n);
-	vec3 l = vec4(theLight.position - gl_Position).xyz;
+	vec3 l = vec4(theLight.position - position).xyz;
 	l = normalize(l);
 	float nl = dot(n, l);
-	
-	vec3 idif = theLight.diffuse * theMaterial.diffuse;
+	float lmax = max(nl,0);
+	vec3 idif = (theLight.diffuse * theMaterial.diffuse);
 	vec3 ispec = espekularra(n, l, nl, theLight);
 
-	return idif + ispec;
+	return d * lmax *(idif + ispec);
 }
 
 void main() {
