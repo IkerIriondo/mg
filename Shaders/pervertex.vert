@@ -32,23 +32,46 @@ attribute vec2 v_texCoord;
 varying vec4 f_color;
 varying vec2 f_texCoord;
 
-void main() {
-	gl_Position = modelToClipMatrix * vec4(v_position, 1);
-	vec3 l = -theLights[0].position.xyz;
+vec3 espekularra(vec3 n, vec3 l, float nl,light_t theLight){
+	vec3 v = gl_Position.xyz;
+	v = normalize(v);
+	vec3 r = 2 * nl * n - l;
+	r = normalize(r);
+	float rv = dot(r, v);
+	float smax = pow(max(0, rv), theMaterial.shininess);
+	
+	return smax * (theMaterial.specular * theLight.specular);
+}
+
+vec3 direkzionala(light_t theLight){
+	vec3 l = -theLight.position.xyz;
 	l = normalize(l);
 	vec3 n = vec4(modelToCameraMatrix * vec4(v_normal,0)).xyz;
 	n = normalize(n);
 	float nl = dot(l, n);
 	float dmax = max(0,nl);
-	vec3 idif = theLights[0].diffuse * theMaterial.diffuse;
+	vec3 idif = theLight.diffuse * theMaterial.diffuse;
 
-	vec3 v = gl_Position.xyz;
-	v = normalize(v);
-	vec3 h = normalize(l + v);
-	float hn = dot(h, n);
-	float smax = max(0, hn);
+	vec3 ispec = espekularra(n, l, nl, theLight);
+
+	return dmax * (idif + ispec);
+}
+
+vec3 lokala(light_t theLight){
+	vec3 n = vec4(modelToCameraMatrix * vec4(v_normal,0)).xyz;
+	n = normalize(n);
+	vec3 l = vec4(theLight.position - gl_Position).xyz;
+	l = normalize(l);
+	float nl = dot(n, l);
 	
-	vec3 ispec = smax * (theMaterial.specular * theLights[0].specular);
+	vec3 idif = theLight.diffuse * theMaterial.diffuse;
+	vec3 ispec = espekularra(n, l, nl, theLight);
 
-	f_color = vec4(scene_ambient + dmax * (idif + ispec),1);
+	return idif + ispec;
+}
+
+void main() {
+	gl_Position = modelToClipMatrix * vec4(v_position, 1);
+	
+	f_color = vec4(scene_ambient + lokala(theLights[0]),1);
 }
