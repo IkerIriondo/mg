@@ -74,8 +74,46 @@ vec3 lokala(light_t theLight){
 	return d * lmax *(idif + ispec);
 }
 
+vec3 spotlight(light_t theLight){
+	vec4 position = vec4(modelToCameraMatrix * vec4(v_position,1));
+
+	vec3 l = vec4(theLight.position - position).xyz;
+	l = normalize(l);
+	vec3 n = vec4(modelToCameraMatrix * vec4(v_normal,0)).xyz;
+	n = normalize(n);
+	float nl = dot(n,l);
+
+
+	float ls = dot(-l, theLight.spotDir);
+
+	float cspot = max(ls, 0);
+
+	if(cspot < theLight.cosCutOff){
+		return vec3(0);
+	}else{
+		vec3 idif = (theLight.diffuse * theMaterial.diffuse);
+		vec3 ispec = espekularra(n, l, nl, theLight);
+
+		return cspot * max(nl,0) * (idif + ispec);
+	}
+
+}
+
 void main() {
 	gl_Position = modelToClipMatrix * vec4(v_position, 1);
+
+	vec3 batura = vec3(0);
+	for(int i = 0; i < 4; i++){
+		if(theLights[i].position.w == 0){
+			batura = batura + direkzionala(theLights[i]);
+		}else{
+			if(theLights[i].cosCutOff == 0){
+				batura = batura + lokala(theLights[i]);
+			}else{
+				batura = batura + spotlight(theLights[i]);
+			}
+		}
+	}
 	
-	f_color = vec4(scene_ambient + lokala(theLights[0]),1);
+	f_color = vec4(scene_ambient + batura,1);
 }

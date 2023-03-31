@@ -88,7 +88,14 @@ void Light::placeScene(const Trfm3D & view, const Trfm3D & model) {
 	Trfm3D modelView = view * model; // this is the current modelview matrix
 
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	if(m_type == directional){
+		m_spotDirectionEye = modelView.transformVector(m_spotDirectionEye);
+	}else if(m_type == positional){
+		m_positionEye = modelView.transformVector(m_positionEye);
+	}else if(m_type == spotlight){
+		m_spotDirectionEye = modelView.transformVector(m_spotDirectionEye);
+		m_positionEye = modelView.transformVector(m_positionEye);
+	}
 	/* =================== END YOUR CODE HERE ====================== */
 }
 
