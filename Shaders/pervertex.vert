@@ -114,6 +114,6 @@ void main() {
 			}
 		}
 	}
-	
+	f_texCoord = v_texCoord;
 	f_color = vec4(scene_ambient + batura,1);
 }

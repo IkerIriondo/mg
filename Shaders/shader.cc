@@ -198,7 +198,7 @@ template<class V> void ShaderProgram::send_uniform(const std::string & uname, co
 void ShaderProgram::beforeDraw() {
 
 	Material *mat;
-	Texture *tex;
+	Texture *tex, *tex2;
 	RenderState *rs = RenderState::instance();
 	static char buffer[1024];
 
@@ -259,6 +259,13 @@ void ShaderProgram::beforeDraw() {
 				// Set bump map in texture unit 'Constants::gl_texunits::bump'
 				tex->bindGLUnit(Constants::gl_texunits::bump);
 				this->send_uniform("bumpmap", Constants::gl_texunits::bump);
+			}
+		}
+		if (this->has_capability("multitext")){
+			tex2 = mat->getTexture(1);
+			if(tex2 != 0){
+				tex2->bindGLUnit(Constants::gl_texunits::rest);
+				this->send_uniform("texture1", Constants::gl_texunits::rest);
 			}
 		}
 	}

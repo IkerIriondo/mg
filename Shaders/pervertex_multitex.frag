@@ -14,6 +14,8 @@ void main() {
 	// textures with a factor of 0.5, e.g:
 	//
 	// color = 0.5 * color_of_texture0 + 0.5 * color_of_texture1
-
-	gl_FragColor = vec4(1.0);
+	vec4 color_of_texture0 = texture2D(texture0, f_texCoord);
+	vec4 color_of_texture1 = texture2D(texture1, f_texCoord);
+	vec4 tcolor = 0.5 * color_of_texture0 + 0.5 * color_of_texture1;
+	gl_FragColor = vec4(f_color) * tcolor;
 }
