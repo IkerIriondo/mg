@@ -206,6 +206,14 @@ bool RenderState::getBBoxDraw() const {
 }
 
 ///////////////////////////////////////////
+// m_cloudOffset
+
+float RenderState::getCloudOffset() {return m_cloudOffset;}
+
+void RenderState::setCloudOffset(float cloudOffset){m_cloudOffset = cloudOffset;}
+
+
+///////////////////////////////////////////
 // Scene ambient light
 void RenderState::setSceneAmbient(const Vector3 &rgb) {
 	m_ambient = rgb;
@@ -237,4 +245,5 @@ void RenderState::print() const {
 
 	printf("Shader: %s\n", m_activeShader ? m_activeShader->getName() : "NULL");
 	bool m_drawBBox;
+
 }

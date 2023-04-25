@@ -23,6 +23,7 @@ static int mouse_pre_x = -1;
 static int mouse_pre_y = -1;
 
 static float angle = 0;
+static float cloudOffset = 0;
 
 static void switchAllLights(bool onOff) {
 	for(auto it = LightManager::instance()->begin(), end = LightManager::instance()->end();
@@ -506,11 +507,20 @@ void animate(int value) {
 	int elapsedTime = currTime - startTime;
 
 	// ##### REPLACE WITH YOUR OWN GAME/APP MAIN CODE HERE #####
-	if (runAnimation) {
+
+	//Eszena txikitu/handitu
+	/*if (runAnimation) {
 		// Force a redisplay to render the new image
 		angle = angle + 0.01;
 		if(angle > 2*M_PI) angle = 0;
 		RenderState::instance()->setSc(cos(angle));
+		glutPostRedisplay();
+	}*/
+
+	//Lainoak mugitu
+	if(runAnimation){
+		cloudOffset = cloudOffset + 0.01;
+		RenderState::instance()->setCloudOffset(cloudOffset);
 		glutPostRedisplay();
 	}
 	// ##### END OF GAME/APP MAIN CODE #####

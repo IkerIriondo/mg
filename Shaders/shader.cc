@@ -261,12 +261,14 @@ void ShaderProgram::beforeDraw() {
 				this->send_uniform("bumpmap", Constants::gl_texunits::bump);
 			}
 		}
-		if (this->has_capability("multitext")){
+		if (this->has_capability("multitex")){
 			tex2 = mat->getTexture(1);
 			if(tex2 != 0){
 				tex2->bindGLUnit(Constants::gl_texunits::rest);
 				this->send_uniform("texture1", Constants::gl_texunits::rest);
 			}
+			float cloudOffset = rs->getCloudOffset();
+			this->send_uniform("uCloudOffset", cloudOffset);
 		}
 	}
 	if (this->has_capability("sc")) {

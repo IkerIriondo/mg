@@ -15,7 +15,7 @@ void main() {
 	//
 	// color = 0.5 * color_of_texture0 + 0.5 * color_of_texture1
 	vec4 color_of_texture0 = texture2D(texture0, f_texCoord);
-	vec4 color_of_texture1 = texture2D(texture1, f_texCoord);
+	vec4 color_of_texture1 = texture2D(texture1, vec2(f_texCoord.x + uCloudOffset, f_texCoord.y));
 	vec4 tcolor = 0.5 * color_of_texture0 + 0.5 * color_of_texture1;
 	gl_FragColor = vec4(f_color) * tcolor;
 }

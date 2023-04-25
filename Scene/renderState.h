@@ -206,6 +206,10 @@ public:
 
 	void print() const;
 
+	float getCloudOffset();
+
+	void setCloudOffset(float cloudOffset);
+
 private:
 	RenderState();
 	~RenderState();
@@ -248,4 +252,8 @@ private:
 
 	Node *m_skybox;
 	float m_sc;
+
+	// Multitex
+
+	float m_cloudOffset;
 };
