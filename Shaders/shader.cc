@@ -270,6 +270,13 @@ void ShaderProgram::beforeDraw() {
 			float cloudOffset = rs->getCloudOffset();
 			this->send_uniform("uCloudOffset", cloudOffset);
 		}
+		if (has_capability("specmap")) {
+			tex = mat->getSpecularMap();
+			if (tex != 0) {
+				tex->bindGLUnit(Constants::gl_texunits::specular);
+				this->send_uniform("specmap", Constants::gl_texunits::specular);
+			}
+		}
 	}
 	if (this->has_capability("sc")) {
 		this->send_uniform("sc", rs->getSc());
