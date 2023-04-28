@@ -36,5 +36,28 @@ varying vec3 f_lightDirection[4]; // tangent space
 varying vec3 f_spotDirection[4];  // tangent space
 
 void main() {
+
+	//3x3 modelview matrizea lortu
+	mat3 MV3x3 = mat3(modelToCameraMatrix);
+
+	//tangentea, bitangentea eta normala kamera koordenatuetara pasa
+	//object space -> camera space
+	vec3 t = MV3x3 * v_TBN_t;
+	vec3 b = MV3x3 * v_TBN_b;
+	vec3 n = MV3x3 * v_normal;
+
+	//kamera espaziotik, tangente espaziora bihurtzen duen matrizea
+	mat3 cameraToTangent = mat3(t, b, n);
+
+	//argiaren norabidea tangente espaziora pasa
+	//camera space -> tangent space
+	f_viewDirection = cameraToTangent * (-v_position);
+	for(int i = 0; i < 4; i++){
+		f_lightDirection[i] = cameraToTangent * theLights[i].position.xyz;
+		f_spotDirection[i] = cameraToTangent * theLights[i].spotDir;
+	}
+	
+	f_texCoord = v_texCoord;
+
 	gl_Position = modelToClipMatrix * vec4(v_position, 1.0);
 }
