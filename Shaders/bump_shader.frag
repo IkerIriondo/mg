@@ -32,7 +32,7 @@ varying vec3 f_lightDirection[4]; // tangent space
 varying vec3 f_spotDirection[4];  // tangent space
 
 vec3 espekularra(vec3 n, vec3 l, float nl,light_t theLight){
-	vec3 v = -f_viewDirection;
+	vec3 v = f_viewDirection;
 	v = normalize(v);
 	vec3 r = 2 * nl * n - l;
 	r = normalize(r);
@@ -43,7 +43,7 @@ vec3 espekularra(vec3 n, vec3 l, float nl,light_t theLight){
 }
 
 vec3 direkzionala(light_t theLight, vec3 n, int i){
-	vec3 l = -f_lightDirection[i];
+	vec3 l = f_lightDirection[i];
 	l = normalize(l);
 
 	float nl = dot(l, n);
@@ -56,10 +56,9 @@ vec3 direkzionala(light_t theLight, vec3 n, int i){
 }
 
 vec3 lokala(light_t theLight, vec3 n, int i){
-	float dist = distance(theLight.position, vec4(f_viewDirection, 1));
-	
-	vec3 l = f_viewDirection;
+	vec3 l = f_lightDirection[i];
 	l = normalize(l);
+
 	float nl = dot(n, l);
 	float lmax = max(nl,0);
 	vec3 idif = (theLight.diffuse * theMaterial.diffuse);
@@ -69,12 +68,11 @@ vec3 lokala(light_t theLight, vec3 n, int i){
 }
 
 vec3 spotlight(light_t theLight, vec3 n, int i){
-	vec3 l = f_viewDirection;
+	vec3 l = f_lightDirection[i];
 	l = normalize(l);
-
 	float nl = dot(n,l);
 
-	float ls = dot(-l, theLight.spotDir);
+	float ls = dot(-l, f_spotDirection[i]);
 
 	float cspot = max(ls, 0);
 
@@ -98,7 +96,7 @@ void main() {
 	N = normalize(N);
 
 	vec3 batura = vec3(0);
-	for(int i = 0; i < 4; i++){
+	for(int i = 0; i < active_lights_n; i++){
 		if(theLights[i].position.w == 0){
 			batura = batura + direkzionala(theLights[i], N, i);
 		}else{

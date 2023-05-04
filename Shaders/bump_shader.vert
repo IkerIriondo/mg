@@ -51,12 +51,17 @@ void main() {
 
 	//argiaren norabidea tangente espaziora pasa
 	//camera space -> tangent space
-	f_viewDirection = cameraToTangent * (-v_position);
+	vec4 position = vec4(modelToCameraMatrix * vec4(v_position,1));
+	f_viewDirection = cameraToTangent * -position.xyz;
+	
 	for(int i = 0; i < 4; i++){
-		f_lightDirection[i] = cameraToTangent * theLights[i].position.xyz;
+		if(theLights[i].position.w == 0){
+			f_lightDirection[i] = cameraToTangent * -theLights[i].position.xyz;
+		}else{
+			f_lightDirection[i] = cameraToTangent * vec4(theLights[i].position - position).xyz;
+		}
 		f_spotDirection[i] = cameraToTangent * theLights[i].spotDir;
 	}
-	
 	f_texCoord = v_texCoord;
 
 	gl_Position = modelToClipMatrix * vec4(v_position, 1.0);

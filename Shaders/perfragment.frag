@@ -91,7 +91,7 @@ vec3 spotlight(light_t theLight){
 void main() {
 
 	vec3 batura = vec3(0);
-	for(int i = 0; i < 4; i++){
+	for(int i = 0; i < active_lights_n; i++){
 		if(theLights[i].position.w == 0){
 			batura = batura + direkzionala(theLights[i]);
 		}else{

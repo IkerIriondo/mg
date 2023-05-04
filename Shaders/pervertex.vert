@@ -103,7 +103,7 @@ void main() {
 	gl_Position = modelToClipMatrix * vec4(v_position, 1);
 
 	vec3 batura = vec3(0);
-	for(int i = 0; i < 4; i++){
+	for(int i = 0; i < active_lights_n; i++){
 		if(theLights[i].position.w == 0){
 			batura = batura + direkzionala(theLights[i]);
 		}else{
