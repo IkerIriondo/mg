@@ -63,7 +63,13 @@ void CreateSkybox(GObject *gobj,
 		exit(1);
 	}
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	Material *mat = MaterialManager::instance()->create(const std::string & skyMaterial);
+	mat->setTexture(ctex);
+	gobj->setMaterial(mat);
+	Node *skyNode = NodeManager::instance()->create(const std::string skyNode);
+	skyNode.attachGobject(gobj);
+	skyNode.attachShader(skyshader);
+	RenderState::instance()->setSkybox(node);
 	/* =================== END YOUR CODE HERE ====================== */
 }
 
