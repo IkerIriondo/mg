@@ -31,7 +31,7 @@ varying vec3 f_viewDirection;     // tangent space
 varying vec3 f_lightDirection[4]; // tangent space
 varying vec3 f_spotDirection[4];  // tangent space
 
-vec3 espekularra(vec3 n, vec3 l, float nl,light_t theLight){
+vec3 espekularra(vec3 n, vec3 l, float nl, light_t theLight){
 	vec3 v = f_viewDirection;
 	v = normalize(v);
 	vec3 r = 2 * nl * n - l;

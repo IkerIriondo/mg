@@ -42,19 +42,19 @@ void main() {
 
 	//tangentea, bitangentea eta normala kamera koordenatuetara pasa
 	//object space -> camera space
-	vec3 t = MV3x3 * v_TBN_t;
-	vec3 b = MV3x3 * v_TBN_b;
-	vec3 n = MV3x3 * v_normal;
+	vec3 t = normalize(MV3x3 * v_TBN_t);
+	vec3 b = normalize(MV3x3 * v_TBN_b);
+	vec3 n = normalize(MV3x3 * v_normal);
 
 	//kamera espaziotik, tangente espaziora bihurtzen duen matrizea
-	mat3 cameraToTangent = mat3(t, b, n);
+	mat3 cameraToTangent = transpose(mat3(t, b, n));
 
 	//argiaren norabidea tangente espaziora pasa
 	//camera space -> tangent space
 	vec4 position = vec4(modelToCameraMatrix * vec4(v_position,1));
 	f_viewDirection = cameraToTangent * -position.xyz;
 	
-	for(int i = 0; i < 4; i++){
+	for(int i = 0; i < active_lights_n; i++){
 		if(theLights[i].position.w == 0){
 			f_lightDirection[i] = cameraToTangent * -theLights[i].position.xyz;
 		}else{
