@@ -63,13 +63,13 @@ void CreateSkybox(GObject *gobj,
 		exit(1);
 	}
 	/* =================== PUT YOUR CODE HERE ====================== */
-	Material *mat = MaterialManager::instance()->create(const std::string & skyMaterial);
+	Material *mat = MaterialManager::instance()->create("skyMaterial");
 	mat->setTexture(ctex);
 	gobj->setMaterial(mat);
-	Node *skyNode = NodeManager::instance()->create(const std::string skyNode);
-	skyNode.attachGobject(gobj);
-	skyNode.attachShader(skyshader);
-	RenderState::instance()->setSkybox(node);
+	Node *skyNode = NodeManager::instance()->create("skyNode");
+	skyNode->attachGobject(gobj);
+	skyNode->attachShader(skyshader);
+	RenderState::instance()->setSkybox(skyNode);
 	/* =================== END YOUR CODE HERE ====================== */
 }
 
@@ -93,8 +93,7 @@ void CreateSkybox(GObject *gobj,
 //
 // - RenderState::instance()->getShader: get current shader.
 // - RenderState::instance()->setShader(ShaderProgram * shader): set shader.
-// - RenderState::instance()->push(RenderState::modelview): push MODELVIEW
-//   matrix.
+// - RenderState::instance()->push(RenderState::modelview): push MODELVIEW matrix.
 // - RenderState::instance()->pop(RenderState::modelview): pop MODELVIEW matrix.
 // - Node::getShader(): get shader attached to node.
 // - Node::getGobject(): get geometry object from node.
@@ -110,6 +109,17 @@ void DisplaySky(Camera *cam) {
 	if (!skynode) return;
 
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	ShaderProgram *previous = rs->instance()->getShader();
+	Vector3 camPos = cam->getPosition();
+	rs->push(RenderState::modelview);
+	Trfm3D pos;
+	pos.setTrans(camPos);
+	rs->addTrfm(RenderState::modelview, &pos);
+	glDisable(GL_DEPTH_TEST);
+	rs->setShader(skynode->getShader());
+	skynode->draw();
+	glEnable(GL_DEPTH_TEST);
+	rs->setShader(previous);
+	rs->pop(RenderState::modelview);
 	/* =================== END YOUR CODE HERE ====================== */
 }
