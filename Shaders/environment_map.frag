@@ -32,7 +32,88 @@ varying vec2 f_texCoord;
 varying vec3 f_positionw;    // world space
 varying vec3 f_normalw;      // world space
 
+vec3 espekularra(vec3 n, vec3 l, float nl,light_t theLight){
+	vec3 v = -f_position;
+	v = normalize(v);
+	vec3 r = 2 * nl * n - l;
+	r = normalize(r);
+	float rv = dot(r, v);
+	float smax = pow(max(0, rv), theMaterial.shininess);
+	
+	return smax * (theMaterial.specular * theLight.specular);
+}
+
+vec3 direkzionala(light_t theLight){
+	vec3 l = -theLight.position.xyz;
+	l = normalize(l);
+	vec3 n = f_normal;
+	n = normalize(n);
+	float nl = dot(l, n);
+	float dmax = max(0,nl);
+	vec3 idif = theLight.diffuse * theMaterial.diffuse;
+
+	vec3 ispec = espekularra(n, l, nl, theLight);
+
+	return dmax * (idif + ispec);
+}
+
+vec3 lokala(light_t theLight){
+	float dist = distance(theLight.position, vec4(f_position, 1));
+	vec3 n = f_normal;
+	n = normalize(n);
+	vec3 l = vec4(theLight.position - vec4(f_position, 1)).xyz;
+	l = normalize(l);
+	float nl = dot(n, l);
+	float lmax = max(nl,0);
+	vec3 idif = (theLight.diffuse * theMaterial.diffuse);
+	vec3 ispec = espekularra(n, l, nl, theLight);
+
+	return lmax *(idif + ispec);
+}
+
+vec3 spotlight(light_t theLight){
+	vec3 l = vec4(theLight.position - vec4(f_position, 1)).xyz;
+	l = normalize(l);
+	vec3 n = f_normal;
+	n = normalize(n);
+	float nl = dot(n,l);
+
+	float ls = dot(-l, theLight.spotDir);
+
+	float cspot = max(ls, 0);
+
+	if(cspot < theLight.cosCutOff){
+		return vec3(0);
+	}else{
+		vec3 idif = (theLight.diffuse * theMaterial.diffuse);
+		vec3 ispec = espekularra(n, l, nl, theLight);
+
+		return cspot * max(nl,0) * (idif + ispec);
+	}
+
+}
 
 void main() {
-	gl_FragColor = vec4(1.0);
+
+	vec3 batura = vec3(0);
+	for(int i = 0; i < active_lights_n; i++){
+		if(theLights[i].position.w == 0){
+			batura = batura + direkzionala(theLights[i]);
+		}else{
+			if(theLights[i].cosCutOff == 0){
+				batura = batura + lokala(theLights[i]);
+			}else{
+				batura = batura + spotlight(theLights[i]);
+			}
+		}
+	}
+	vec4 f_color = vec4(batura + scene_ambient, 1);
+
+	vec3 l = normalize(campos - f_positionw);
+	vec3 r = normalize(2 * dot(f_normalw, l) * f_normalw - l);
+	r.z = -r.z;
+	vec4 tcolor = textureCube(envmap, r);
+
+	gl_FragColor = vec4(f_color) * tcolor;
+
 }
