@@ -15,7 +15,9 @@ RenderState::RenderState() :
 	m_ambient(Vector3(0.05f, 0.05f, 0.05)),
 	m_activeShader(0),
 	m_drawBBox(false), 
-	m_sc(1.0f) {}
+	m_sc(1.0f),
+	rtex(0),
+	ms(0) {}
 
 RenderState::~RenderState() {}
 
@@ -245,5 +247,21 @@ void RenderState::print() const {
 
 	printf("Shader: %s\n", m_activeShader ? m_activeShader->getName() : "NULL");
 	bool m_drawBBox;
+
+	Trfm3D RenderState::getMS(){
+		return ms;
+	}
+
+	void RenderState::setMS(Trfm3D *ms1){
+		ms = ms1;
+	}
+
+	Texture RenderState::getRtex(){
+		return rtex;
+	}
+
+	void RenderState::setRtex(Texture *tex){
+		rtex = tex;
+	}
 
 }

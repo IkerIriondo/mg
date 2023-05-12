@@ -256,4 +256,9 @@ private:
 	// Multitex
 
 	float m_cloudOffset;
+
+	// Itzalak
+
+	Texture *rtex;
+	Trfm3D *ms;
 };
